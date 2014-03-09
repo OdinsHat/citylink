@@ -1,7 +1,19 @@
+"""
+This CityLink Utilities library was built to help integrate with ecommerce shops 
+for easy updating of delivery statuses. As well as a few extras like emailing manifests.
+
+Copyright (c) 2013-2014, Doug Bromley <doug.bromley@gmail.com>.
+License: BSD (see LICENSE for details)
+"""
+
 from mechanize import Browser
 from lxml import html
 from mailer import Mailer
 from mailer import Message
+
+__author__ = "Doug Bromley"
+__version__ = "0.8b"
+__license__ = "BSD"
 
 class CityLink(Browser, object):
     def __init__(self, username, password):
@@ -46,13 +58,13 @@ class CityLink(Browser, object):
         return manifest.read()
     
     def fetch_citylink_refs(self):
-        """Grab the City Link reference numbers"""
+        """Grab the City Link reference numbers as a list"""
         tree = html.fromstring(self.fetch_manifest())
         self_refs = tree.xpath('//table/tr/td/table/tr[position()>4]/td[1]/text()')
         return [x.strip() for x in self_refs[:-1]]
 
     def fetch_self_refs(self):
-        """Grab your reference numbers"""
+        """Grab your reference numbers as a list"""
         tree = html.fromstring(self.fetch_manifest())
         self_refs = tree.xpath('//table/tr/td/table/tr[position()>4]/td[2]/text()')
         return [x.strip() for x in self_refs[:-1]]
