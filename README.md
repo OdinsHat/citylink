@@ -23,8 +23,6 @@ The version below have been tested and working. Its possible other earlier and l
 * [lxml 3.3.3+](https://pypi.python.org/pypi/lxml) 
 * [Mailer 0.7+](https://pypi.python.org/pypi/mailer)
 
-
-
 Examples
 --------
 
