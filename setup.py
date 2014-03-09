@@ -6,10 +6,10 @@ try:
 except ImportError:
     from distutils.core import setup
 
-requires = ('mechanize', 'lxml', 'Mailer')
+requirements = ('mechanize', 'lxml', 'Mailer')
 
 setup(name='citylink-utils',
-    version=citylink.__version__,
+    version='0.8b',
     description='Simple utility package to handle CityLink dispatches for commercial customers',
     long_description=open('README.md'),
     author='Doug Bromley',
@@ -19,9 +19,11 @@ setup(name='citylink-utils',
     license='BSD',
     keywords='citylink courier web scraping',
     platforms = 'any',
-    install_requirements=['mechanize', 'lxml', 'Mailer'],
+    setup_requires=requirements,
+    install_requires=requirements,
     classifiers=[
         'License :: OSI Approved :: BSD License',
+        'Development Status :: 3 - Beta'
         'Operating System :: POSIX :: Linux',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
