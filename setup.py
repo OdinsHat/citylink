@@ -9,7 +9,7 @@ except ImportError:
 requirements = ('mechanize', 'lxml', 'Mailer')
 
 setup(name='citylink-utils',
-    version='0.8b',
+    version='0.8',
     description='Simple utility package to handle CityLink dispatches for commercial customers',
     long_description=open('README.rst').read(),
     author='Doug Bromley',
@@ -23,8 +23,8 @@ setup(name='citylink-utils',
     install_requires=requirements,
     classifiers=[
         'License :: OSI Approved :: BSD License',
-        'Development Status :: 3 - Beta'
-        'Operating System :: POSIX :: Linux',
+        'Development Status :: 5 - Production/Stable',
+        'Operating System :: OS Independent',
         'Intended Audience :: Developers',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.5',
