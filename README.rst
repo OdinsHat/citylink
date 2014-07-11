@@ -20,8 +20,11 @@ Requirements
 ------------
 
 The version below have been tested and working. Its possible other
-earlier and later versions may work. \* `Mechanize 0.2.5+`_ \* `lxml
-3.3.3+`_ \* `Mailer 0.7+`_
+earlier and later versions may work. 
+
+- `Mechanize 0.2.5+`_ 
+- `lxml 3.3.3+`_ 
+- `Mailer 0.7+`_
 
 Examples
 --------
