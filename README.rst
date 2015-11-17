@@ -2,7 +2,9 @@ CityLink Utilities
 ==================
 
 The following package was developed to help process despatch requests
-with `City Link`_ couriers based in the UK.
+with `City Link`_ [link broken] couriers based in the UK.
+
+[Note: City Link went into administration Dec 2014 so these scripts are defunct and are merely kept for archival purposes]
 
 They lacked an API for easy management of various functions such as
 retrieving manifests, reference codes, etc.
